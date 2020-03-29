@@ -30,13 +30,13 @@ export default function Logon() {
 
                     <strong>VALOR:</strong>
                     <p>R$120,00</p>
-                    
+
                     <button>
                         <FiTrash2 size={20} color="#a8a8b3" />
                     </button>
 
                 </li>
-            
+
                 <li>
                     <strong>CASO:</strong>
                     <p>Caso Teste</p>
@@ -46,12 +46,12 @@ export default function Logon() {
 
                     <strong>VALOR:</strong>
                     <p>R$120,00</p>
-                     
+
                     <button>
                         <FiTrash2 size={20} color="#a8a8b3" />
                     </button>
                 </li>
-           
+
                 <li>
                     <strong>CASO:</strong>
                     <p>Caso Teste</p>
@@ -61,7 +61,7 @@ export default function Logon() {
 
                     <strong>VALOR:</strong>
                     <p>R$120,00</p>
-                     
+
                     <button>
                         <FiTrash2 size={20} color="#a8a8b3" />
                     </button>
@@ -75,7 +75,7 @@ export default function Logon() {
 
                     <strong>VALOR:</strong>
                     <p>R$120,00</p>
-                     
+
                     <button>
                         <FiTrash2 size={20} color="#a8a8b3" />
                     </button>
@@ -88,7 +88,7 @@ export default function Logon() {
                     <p>Descrição teste</p>
 
                     <strong>VALOR:</strong>
-                    <p>R$120,00</p>                     
+                    <p>R$120,00</p>
                     <button>
                         <FiTrash2 size={20} color="#a8a8b3" />
                     </button>

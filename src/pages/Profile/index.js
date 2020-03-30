@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import './styles.css';
 import { FiPower, FiTrash2 } from 'react-icons/fi';
 
@@ -7,10 +7,11 @@ import api from '../../services/api';
 
 import logo from '../../assets/logo.svg';
 
-export default function Logon() {
+export default function Profile() {
 
     const [incidents, setIncidents] = useState([]);
 
+    const histtory = useHistory();
     const ongId = localStorage.getItem('ongId')
     const ongName = localStorage.getItem('ongName')
 
@@ -36,6 +37,10 @@ export default function Logon() {
             alert('Erro ao eletar caso, tente novamente!');
         }
     }
+    async function handleLogout() {
+        localStorage.clear();
+        histtory.push('/');
+    }
 
     return (
         <div className="profile-container">
@@ -45,7 +50,7 @@ export default function Logon() {
                 <Link className="button" to="/incidentes/new">
                     Cadastrar novo caso
                 </Link>
-                <button type="button">
+                <button onClick={handleLogout} type="button">
                     <FiPower size={18} color="#e02041" />
                 </button>
             </header>
